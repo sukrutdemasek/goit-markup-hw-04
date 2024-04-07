@@ -1,3 +1,10 @@
+:hover,
+:focus
+{
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
 body {
     font-family: Roboto, sans-serif;
     background-color: #FFFFFF;
@@ -28,6 +35,16 @@ nav{
     display:flex;
     flex-direction: row;
     flex-grow:1;
+}
+.header-button::before{
+    content:"";
+    text-decoration: none;
+   
+}
+.header-button::after{
+    content:"";
+    text-decoration: underline;
+   
 }
 .container{
     width:1158px;
@@ -143,11 +160,19 @@ ul{
 }
 
 .main-header{
-    background: #2e2f42;
-    padding:188px 0px;
     
+    background-image:linear-gradient(
+        0deg,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ), url(/images/people-office-1.jpg);
+    
+    padding:188px 0px;
+    max-width: 1440px;
+    margin:0px auto;
     
 }
+
 .headline-one {
     font-weight: 700;
     font-size: 56px;
@@ -155,7 +180,9 @@ ul{
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    margin-bottom: 48px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:48px;
     max-width:496px;
    
     
@@ -249,10 +276,14 @@ color: #434455;
     background-color: #f4f4fD;
     padding:120px 0;
 }
+.team-section .container{
+    padding:0 15px;
+}
 .team-element{
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 
 }
 .team-section .headline-two{
@@ -265,6 +296,41 @@ color: #2e2f42;
 text-transform: capitalize;
 margin-bottom: 72px;
 }
+.qualities-icon-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    padding:24px 100px 24px 100px;
+    background-color: #f4f4fd;
+    border:1px solid #8e8f99;
+}
+.social-icons{
+    
+    display:flex;
+    padding:8px 16px 32px 16px;
+    justify-content: center;
+    align-items: center;
+    
+    gap:24px;
+}
+.social-icons .social-icon{
+    width:40px;
+    height:40px;
+    fill:#000;
+    background-color: #4D5AE5;
+    padding:12px;
+    border-radius:50%;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+
+
+}
+.social-icons .social-icon:focus, .social-icon:hover{
+    background-color: #404BBF;
+}
+
 
 .team-list{
     display: flex;
@@ -310,6 +376,14 @@ color: #434455;
 }
 .portfolio-element{
     width: calc((100% - 48px) / 3); 
+    position:relative;
+    overflow: hidden;
+
+}
+.portfolio-element:hover{
+    
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    
 }
 .portfolio-element .headline-three{
     font-weight: 500;
@@ -348,18 +422,61 @@ color: #434455;
     
     
 }
+.overlay{
+    content: "";
+    background-color:#4D5AE5;
+    
+    padding:40px 32px 164px 32px;
+    transform:translateY(100%);
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    
+
+
+}
+.overlay-text{
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #f4f4fd;
+}
+.portfolio-element:hover .overlay
+{
+    
+    transform: translateY(0%);
+    
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+
+}
 .footer-div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: flex-start;
+    max-width: 1158px;
+    gap:120px;
+    
+    
+    
 }
 .footer-section{
     background:#2e2f42;
     padding-top:100px;
     padding-bottom:100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+
 }
+
 .footer-section .text{
     font-weight: 400;
 font-size: 16px;
@@ -368,6 +485,36 @@ letter-spacing: 0.02em;
 color: #f4f4fd;
 max-width:264px ;
 
+}
+.social-footer .social-headline{
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #fff;
+
+}
+.social-footer .social-footer-icons{
+    display: flex;
+    gap:16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top:16px;
+    
+}
+.social-footer .social-icon{
+    background-color: #404bbf;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width:40px;
+    height:40px;
+    padding:8px;
+
+}
+.social-footer .social-icon:hover, .social-footer .social-icon:focus{
+    background-color: #31D0AA;
 }
 .footer-section .header-logo{
     font-weight: 700;
