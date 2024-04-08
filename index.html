@@ -255,7 +255,7 @@
 
           <ul class="header-buttons">
             <li class="studio-header-element">
-              <a href="./index.html" class="header-button-studio"> Studio </a>
+              <a href="./index.html" class="header-button" id="one"> Studio </a>
             </li>
             <li>
               <a href="" class="header-button">Portfolio</a>
@@ -532,117 +532,118 @@
           <h2 class="headline-two">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-element">
-              <img
-                src="./images/img-5-min.jpg"
-                alt="Banking App"
-                width="360"
-                height="300"
-              />
+              <div class="portfolio-image">
+                <img
+                  src="./images/img-5-min.jpg"
+                  alt="Banking App"
+                  width="360"
+                  height="300"
+                />
+
+                <p class="overlay-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
               <div class="portfolio-block">
                 <h3 class="headline-three">Banking App</h3>
                 <p class="text">App</p>
               </div>
-              <div class="overlay">
+            </li>
+            <li class="portfolio-element">
+              <div class="portfolio-image">
+                <img
+                  src="./images/img-4-min.jpg"
+                  alt="Cashless Payment"
+                  width="360"
+                  height="300"
+                />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
               </div>
-            </li>
-            <li class="portfolio-element">
-              <img
-                src="./images/img-4-min.jpg"
-                alt="Cashless Payment"
-                width="360"
-                height="300"
-              />
               <div class="portfolio-block">
                 <h3 class="headline-three">Cashless Payment</h3>
                 <p class="text">Marketing</p>
               </div>
-              <div class="overlay">
+            </li>
+            <li class="portfolio-element">
+              <div class="portfolio-image">
+                <img
+                  src="./images/img-3-min.jpg"
+                  alt="Meditation app"
+                  width="360"
+                  height="300"
+                />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
               </div>
-            </li>
-            <li class="portfolio-element">
-              <img
-                src="./images/img-3-min.jpg"
-                alt="Meditation app"
-                width="360"
-                height="300"
-              />
               <div class="portfolio-block">
                 <h3 class="headline-three">Meditation App</h3>
                 <p class="text">App</p>
               </div>
-              <div class="overlay">
+            </li>
+            <li class="portfolio-element">
+              <div class="portfolio-image">
+                <img
+                  src="./images/img-2-min.jpg"
+                  alt="Taxi Service"
+                  width="360"
+                  height="300"
+                />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
               </div>
-            </li>
-            <li class="portfolio-element">
-              <img
-                src="./images/img-2-min.jpg"
-                alt="Taxi Service"
-                width="360"
-                height="300"
-              />
               <div class="portfolio-block">
                 <h3 class="headline-three">Taxi Service</h3>
                 <p class="text">Marketing</p>
               </div>
-              <div class="overlay">
+            </li>
+            <li class="portfolio-element">
+              <div class="portfolio-image">
+                <img
+                  src="./images/img-1-min.jpg"
+                  alt="Screen Illustrations"
+                  width="360"
+                  height="300"
+                />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
               </div>
-            </li>
-            <li class="portfolio-element">
-              <img
-                src="./images/img-1-min.jpg"
-                alt="Screen Illustrations"
-                width="360"
-                height="300"
-              />
               <div class="portfolio-block">
                 <h3 class="headline-three">Screen Illustrations</h3>
                 <p class="text">Design</p>
               </div>
-              <div class="overlay">
+            </li>
+            <li class="portfolio-element">
+              <div class="portfolio-image">
+                <img
+                  src="./images/img-min.jpg"
+                  alt="Online Courses"
+                  width="360"
+                  height="300"
+                />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
               </div>
-            </li>
-            <li class="portfolio-element">
-              <img
-                src="./images/img-min.jpg"
-                alt="Online Courses"
-                width="360"
-                height="300"
-              />
               <div class="portfolio-block">
                 <h3 class="headline-three">Online Courses</h3>
                 <p class="text">Marketing</p>
-              </div>
-              <div class="overlay">
-                <p class="overlay-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
-                </p>
               </div>
             </li>
           </ul>
@@ -665,27 +666,35 @@
           </div>
         </div>
         <div class="social-footer">
-          <h3 class="social-headline">Social media</h3>
+          <p class="social-headline">Social media</p>
           <ul class="social-footer-icons">
             <li class="social-icons-element">
-              <svg class="social-icon" width="16" height="16">
-                <use href="#icon-instagram-2"></use>
-              </svg>
+              <a href="https://instagram.com" class="social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="#icon-instagram-2"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-icons-element">
-              <svg class="social-icon" width="16" height="16">
-                <use href="#icon-Group"></use>
-              </svg>
+              <a href="https://x.com" class="social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="#icon-Group"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-icons-element">
-              <svg class="social-icon" width="16" height="16">
-                <use href="#icon-facebook-1"></use>
-              </svg>
+              <a href="https://facebook.com" class="social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="#icon-facebook-1"></use>
+                </svg>
+              </a>
             </li>
             <li class="social-icons-element">
-              <svg class="social-icon" width="16" height="16">
-                <use href="#icon-linkedin-1"></use>
-              </svg>
+              <a href="https://linkedin.com" class="social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="#icon-linkedin-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
