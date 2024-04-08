@@ -511,6 +511,9 @@ color: #f4f4fd;
 max-width:264px ;
 
 }
+.footer-social-link .social-icon{
+    fill:#f4f4fD;
+}
 .social-footer .social-headline{
     font-weight: 500;
 font-size: 16px;
