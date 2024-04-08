@@ -43,6 +43,8 @@ transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #one{
     position:relative;
+    color: #404BBF;
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #one::after{
@@ -127,7 +129,8 @@ ul{
     
     
 }
-li .address-block{
+
+.address-element{
     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -412,7 +415,7 @@ color: #434455;
     overflow: hidden;
 }
 
-.portfolio-element:hover{
+.portfolio-element:hover .overlay-text{
     
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transform: translateY(0%);
@@ -456,6 +459,7 @@ color: #434455;
 }
 
 .overlay-text{
+    top:0;
     font-weight: 400;
 position: absolute;
 font-size: 16px;
@@ -534,7 +538,7 @@ margin-bottom: 16px;
     padding:8px;
 
 }
-.social-footer-icons .social-icons-element{
+.social-icons-element{
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-footer .social-icon:hover, .social-footer .social-icon:focus{
